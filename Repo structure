@@ -1,0 +1,15 @@
+deshgpt-skill-test/
+├─ data/
+│  ├─ conversations.csv           # turn-level dataset (text + intent)
+│  └─ conv_for_lm.csv             # grouped conversation sequences for LM training
+├─ notebooks/
+│  └─ colab_finetune.ipynb        # Colab-ready notebook (cells described below)
+├─ src/
+│  ├─ create_dataset.py          # script to build small synthetic dataset
+│  ├─ train_lora.py              # LoRA fine-tuning script for LM
+│  ├─ train_intent.py            # intent classifier training script
+│  └─ inference.py               # inference with context retention + intent routing
+├─ outputs/
+│  └─ sample_outputs.txt         # sample conversation outputs (generated)
+├─ requirements.txt
+└─ README.md
